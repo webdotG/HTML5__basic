@@ -1,17 +1,376 @@
-<!DOCTYPE html>
+<!DOCTYPE html> <!-- -->
 <html lang="ru"> <!-- language choice-->
 <head>
     <meta charset="UTF-8">
     <title>html_5__basic</title> <!--title page-->
-    <link rel="shortcut icon" href="img/logo-html5-circle.png" sizes="64x64"> <!--icon page add-->
+    <link rel="shortcut icon" href="img/logo-html5-circle.png" sizes="64x64" type="html5_logi--mini">
+    <!--icon page add-->
+    <link rel="stylesheet" href="fonts/noto_sans_jp.css"> <!--fonts add-->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> <!--fonts add-->
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap"
+          rel="stylesheet"> <!--fonts add-->
     <link rel="stylesheet" href="css/style.css"> <!--style add-->
     <link rel="apple-touch-icon" sizes="64x64" href="img/logo-html5-circle.png"> <!--apple icon add-->
     <meta name="web_dot_g" content="test, html5 basic, html"> <!--seo-->
+    <meta name="keywords" content="html5, webdotg, basic"> <!--seo-->
     <meta name="viewport" content="width=device-width, initial-scale=1"> <!--for mobile-->
-
-
 </head>
 <body>
-
+<div class="text-wrapper">
+    <!--headings-->
+    <h1>title dom</h1>
+    <h2>next title</h2>
+    <h3>any title</h3>
+    <h6>teeny title</h6>
+    <br>
+    <!--paragraph-->
+    <p>simple text</p>
+    <br>
+    <!--quote and author -->
+    <q>To be, or not to be <!--quote--></q>
+    <address>Hamlet Act 3, Scene 1.</address> <!--author-->
+    <br>
+    <!--information about author -->
+    <p>fucking hackers and i'm a fool...</p>
+    <address>web_dot_g, earth planet</address>
+    <br>
+    <!--block of quote-->
+    <blockquote>
+        <p>
+            мяу мяу мяу<br>
+            мяу мяу<br>
+            мяу мяу мяу мяу мяу мяу<br>
+            мяу мяу мяу<br>
+            мяу мяу<br>
+            мяу мяу мяу мяу мяу мяу<br>
+            мяу<br>
+        </p>
+        <address>Кот</address>
+    </blockquote>
+    <br>
+    <!--time or date information-->
+    <time>11-January-1906/29-April-2008</time>
+    <br>
+    <time datatype="1936">DSL</time>
+    <br>
+    <!--bold/italic,typing,deleted text-->
+    <strong>bold text-semantic</strong><br>
+    <b>bold text-no semantic,style only</b><!--no semantic,style only-->
+    <br>
+    <em>italic text-semantic</em><br>
+    <i>italic text-no semantic,style only</i><!--no semantic,style only-->
+    <br>
+    <tt>typing text, no semantic</tt><!--no semantic,style only-->
+    <br>
+    <del>deleted text- semantic</del>
+    <br>
+    <s>deleted text- no semantic</s><br><!--no semantic,style only-->
+    <!--code example-->
+    <code> <!--no format code-->
+        body {
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        color: black;
+        }
+    </code>
+    <br>
+    <pre> <!--format code-->
+    <code>
+        body {
+        font-family: Roboto, Arial, sans-serif;
+        font-size: 16px;
+        line-height: 22px;
+        color: black;
+        }
+    </code>
+    </pre>
+    <br>
+    <!--small/big text-->
+    <h3>to know html <small>semantic</small> is important</h3>
+    <h3>to know html <big>semantic</big> is important</h3>
+    <br>
+    <!--subscripted/superscripted text-->
+    <h2>to know html <sub>semantic</sub> is important</h2>
+    <h2>to know html <sup>semantic</sup> is important</h2>
+</div>
+<div class="lists-wrapper">
+    <!--unordered list-->
+    <ul type="square">
+        <li>front-end developer</li>
+        <li>back-end developer</li>
+        <li>full-stack developer</li>
+    </ul>
+    <!--ordered list-->
+    <ol start="10" reversed>
+        <li>front-end developer</li>
+        <li>back-end developer</li>
+        <li>full-stack developer</li>
+    </ol>
+    <!--nested list-->
+    <ul type="disc">
+        <li>front-end developer
+            <ul type="circle">
+                <li>html</li>
+                <li>css</li>
+                <li>js</li>
+            </ul>
+        </li>
+        <li>back-end developer</li>
+        <li>full-stack developer</li>
+    </ul>
+    <!--definitions list-->
+    <dl>
+        <dt>front-end developer</dt>
+        <dd>it is a person who works with the visible part of website</dd>
+        <dt>back-end developer</dt>
+        <dd>it is a person who works with the hidden part</dd>
+    </dl>
+</div>
+<div class="img-wrapper">
+    <!--simple img-->
+    <img src="" alt="simple-img-no semantic" width="" height="">
+    <br>
+    <!--responsive img-->
+    <picture>
+        <source media="(min-width: 1200px)" srcset="img/">
+        <source media="(min-width: 768px)" srcset="img/">
+        <source media="(min-width: 360px)" srcset="img/">
+        <img src="img" alt="img-responsive no semantic">
+    </picture>
+    <br>
+    <!--img with semantic-->
+    <figure>
+        <img src="img/" alt="img semantic with description">
+        <figcaption>description for the picture</figcaption>
+    </figure>
+    <br>
+</div>
+<div class="link_buttons-wrapper">
+    <!--simple link -->
+    <a href="index.html">link</a>
+    <br>
+    <!--download link -->
+    <a href="" download="">download link</a>
+    <br>
+    <!--open link in new tab -->
+    <a href="" target="_blank">open link in new tab</a>
+    <br>
+    <!--open link in new tab with new options -->
+    <a href="tel:+78129876543">call me</a>
+    <br>
+    <a href="mailto:test@test.com">e-mail</a>
+    <br>
+    <a href="skype:test">skype</a>
+    <br>
+    <!--anchor link -->
+    <a href="#anchor">go to bottom anchor</a>
+    <br>
+    <!--simple button -->
+    <button type="button">simple button</button>
+    <button type="submit">submit button</button>
+    <button type="reset">reset button</button>
+    <br>
+    <!--autofocus button -->
+    <button type="button" autofocus>autofocus button</button>
+    <br>
+    <!--disabled button -->
+    <button type="reset" disabled>disabled button</button>
+    <br>
+    <p id="anchor">bottom anchor</p>
+</div>
+<div class="forms">
+    <!--simple form-->
+    <form method="get" action="" name="simple form" autocomplete="on">
+        <!--action-Указывает обработчик/файл, к которому обращаются данные формы при их отправке на сервер-->
+        <!--method-get/Этот метод является одним из самых распространенных и предназначен для получения требуемой информации и передачи данных в адресной строке. Пары «имя=значение» присоединяются в этом случае к адресу после вопросительного знака и разделяются между собой амперсандом (символ &). Удобство использования метода get заключается в том, что адрес со всеми параметрами можно использовать неоднократно, сохранив его, например, в закладки браузера, а также менять значения параметров прямо в адресной строке.-->
+        <!--method-post/Метод post посылает на сервер данные в запросе браузера. Это позволяет отправлять большее количество данных, чем доступно методу get, поскольку у него установлено ограничение в 4 Кб. Большие объемы данных используются в форумах, почтовых службах, заполнении базы данных, при пересылке файлов и др.-->
+        <!--name-имя формы-->
+        <!--autocomplete-автозаполнение формы ранее вводимыми значениями-->
+        <fieldset> <!-- border form/logic border-->
+            <legend>simple legend/name form</legend> <!-- legend/name form-->
+            <input type="text"> <!-- type= "формат данных которые мы хотим ввести"-->
+            <br>
+            <textarea rows="10" cols="50" name="comments form"></textarea>
+            <br>
+            <input type="submit">
+        </fieldset>
+    </form>
+    <br>
+    <form>
+        <fieldset>
+            <legend>label example</legend>
+            <fieldset>
+                <legend>label&input-first example</legend>
+                <label for="first_example">first_example</label>
+                <input id="first_example" type="text">
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>label&input-second example</legend>
+                <label>second_example<input type="text"></label>
+            </fieldset>
+            <input type="submit">
+        </fieldset>
+    </form>
+    <br>
+    <form>
+        <fieldset>
+            <legend>variables text_area/select</legend>
+            <fieldset>
+                <textarea rows="10" cols="50" name="name_textarea" placeholder="please, use me.." maxlength="500"
+                          autofocus required></textarea>
+                <!--rows- кол-во строк-->
+                <!--cols- кол-во колонок-->
+                <!--name- для установки имени-->
+                <!--autofocus- автоматически фокусирует на поле-->
+                <!--disabled- делает поле недоступным для заполнения-->
+                <!--readonly- данные в поле нельзя изменить но поле остается активным-->
+                <!--placeholder- добаляет текст который обьясняет/коментирует его можно заменить но нельзя выделить-->
+                <!--maxlenght- устанавливает максимальное число вводимых символов-->
+                <!--required- говорит, что поле должно быть обязательно заполненным-->
+            </fieldset>
+            <fieldset>
+                <select>
+                    <option value="front-end">front-end</option>
+                    <option value="back-end">back-end</option>
+                </select>
+                <br>
+                <select>
+                    <optgroup label="speciality">
+                        <option value="front-end">front-end</option>
+                        <option value="back-end">back-end</option>
+                    </optgroup>
+                    <optgroup label="direction">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </optgroup>
+                </select>
+                <!---->
+            </fieldset>
+        </fieldset>
+    </form>
+    <form>
+        <fieldset>
+            <legend>input list</legend>
+            <!--text-->
+            <label>text-<input type="text"></label>
+            <br>
+            <!--number-->
+            <label>number-<input type="number"></label>
+            <br>
+            <label>number min-max-<input type="number" min="1" max="10"></label>
+            <br>
+            <label>number step-2-<input type="number" step="2"></label>
+            <br>
+            <!--password-->
+            <label>password-<input type="password"></label>
+            <br>
+            <!--range-->
+            <label>range-<input type="range"></label>
+            <br>
+            <!--date-->
+            <label>date-<input type="date"></label>
+            <br>
+            <!--color-->
+            <label>color-<input type="color"></label>
+            <br>
+            <!--submit&reset buttons-->
+            <label>submit-<input type="submit"></label>
+            <br>
+            <label>reset-<input type="reset"></label>
+            <br>
+            <!--submit&reset with custom labels-->
+            <input type="submit" value="submit form">
+            <br>
+            <input type="reset" value="reset form">
+            <br>
+            <!--list of options-->
+            <label>datalist-<input type="text" list="list1"></label> <!--list надо привязать к даталист через id-->
+            <datalist id="list1">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </datalist>
+            <br>
+            <!--email-->
+            <label>email-<input type="email"></label>
+            <br>
+            <!--url-->
+            <label>url-<input type="url"></label>
+            <br>
+            <!--img-->
+            <input type="image" src="img/" alt="input-img"> <!--картинка в виде поля ))))-->
+            <br>
+            <!--telephone-->
+            <label>telephone-<input type="tel"></label>
+            <br>
+            <!--search-->
+            <label>search-<input type="search"></label>
+            <br>
+            <!--local date&time-->
+            <label>datetime-<input type="datetime-local"></label>
+            <br>
+            <!--month-->
+            <label>month-<input type="month"></label>
+            <br>
+            <!--time-->
+            <label>time-<input type="time"></label>
+            <br>
+            <!--week-->
+            <label>week-<input type="week"></label>
+            <br>
+            <!--hidden-->
+            <label>hidden-<input type="hidden" value="secret_info"></label>
+            <!-- не показывается пользователю/скрыта от него, но нужна для коректной работы скриптов или передачи инфы которая должна быть скрыта от пользователя-->
+            <br>
+            <!--file-->
+            <label>file-<input type="file"></label>
+            <label>multiple file-<input type="file" multiple></label>
+            <br>
+            <!--checkbox-->
+            <input type="checkbox" value="1" checked>
+            <input type="checkbox" value="2" checked>
+            <input type="checkbox" value="3" disabled>
+            <br>
+            <!--radio button-->
+            <input type="radio" name="name" value="1" checked>
+            <input type="radio" name="name" value="2">
+            <input type="radio" name="name" value="3" disabled>
+            <br>
+        </fieldset>
+    </form>
+</div>
+<div class="video_music-wrapper">
+    <!--audio-->
+    <audio src="">your browser does not support the audio tag</audio>
+    <br>
+    <!--video-->
+    <video width="" height="">
+        <source src="" type="video/ogg"> <!--для добавления нескольких файлов-->
+        <source src="" type="video/mp4"> <!--для добавления нескольких файлов-->
+        your browser does not support the video tag <!--строка будет отображаться еслт браузер не поддерживает формат-->
+    </video>
+    <br>
+    <!--audio/video-->
+    <video controls preload="metadata" poster="img/" width="" height="">your browser does not support the video tag</video>
+    <!--controls-дефолтный "проигрыватель"(громкость,перемотка и тд)-->
+    <!--loop-запуск бесконечно по кругу файла-->
+    <!--autoplay-для авто проигрывания файла-->
+    <!--muted- дефолтно убирает звук у файла при загрузке страницы но всегда можно вернуть звук-->
+    <!--poster- загружает картинку как афишу, пока видео грузится или не начаои проигрывать-->
+    <!--preload- игнорируется, если установлен autoplay.Используется для загрузки видео вместе с загрузкой веб-страницы -->
+    <!--preload="none/metadata/auto"-не загружать/Загрузить только служебную информацию (размеры видео, первый кадр, продолжительность и др.)/Загрузить видео целиком при загрузке страницы.-->
+</div>
+<div class="useful-attributes">
+    <!--title-->
+    <h2 title="hypertext markup language" spellcheck="true" tabindex="1" CONTENTEDITABLE="true" style="width: 50px">html</h2>
+    <!--title-, добавляет всплывающую подсказку если навести курсором -->
+    <!--style-инлайновый стиль, лучше не юзать затрахаешься переопределять только через important-->
+    <!--CONTENTEDITABLE- позволяет изменитьсодержимое тега прям на странице браузера, при обновлении страницы изменения пропадут-->
+    <!--spellcheck- включает проверку правописания-->
+    <!--tabindex="1"- устанавливает порядок фокуса на элементы-->
+    <!---->
+</div>
 </body>
 </html>
